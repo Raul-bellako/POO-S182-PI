@@ -28,9 +28,9 @@ def open_registro():
         ncuenta = int(ncuenta_entry.get())
         titular = titular_entry.get()
         edad = int(edad_entry.get())
-        correo = str(correo.get())
+        correo = correo_entry.get()
         saldo = float(saldo_entry.get())
-        acciones.registrar_usuario(ncuenta, titular, edad, saldo)
+        acciones.registrar_usuario(ncuenta, titular, edad, correo, saldo)
     
     # Registro de usuario
     ncuenta_label = Label(frame2, text="No. Cuenta")
