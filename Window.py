@@ -34,20 +34,24 @@ def open_registro():
     
     # Registro de usuario
     ncuenta_label = Label(frame2, text="No. Cuenta")
+    ncuenta_label.config(font=("Bebas Neue",10))
     ncuenta_label.grid(row=0, column=0, padx=10, pady=10)
     ncuenta_entry = Entry(frame2)
     ncuenta_entry.grid(row=0, column=1, padx=10, pady=10)
     titular_label = Label(frame2, text="Titular")
     titular_label.grid(row=1, column=0, padx=10, pady=10)
+    titular_label.config(font=("Bebas Neue",10))
     titular_entry = Entry(frame2)
     titular_entry.grid(row=1, column=1, padx=10, pady=10)
     edad_label = Label(frame2, text="Edad")
+    edad_label.config(font=("Bebas Neue",10))
     edad_label.grid(row=2, column=0, padx=10, pady=10)
     edad_entry = Entry(frame2)
     edad_entry.grid(row=2, column=1, padx=10, pady=10)
     saldo_label = Label(frame2, text="Saldo")
     saldo_label.grid(row=3, column=0, padx=10, pady=10)
     saldo_entry = Entry(frame2)
+    saldo_label.config(font=("Bebas Neue",10))
     saldo_entry.grid(row=3, column=1, padx=10, pady=10)
     
     correo_label = Label(frame2, text="Correo")
@@ -55,13 +59,13 @@ def open_registro():
     correo_entry = Entry(frame2)
     correo_entry.grid(row=4, column=1, padx=10, pady=10)
     
-    registrar_button = Button(frame2, text="Registrar usuario", command=registrar_usuario)
+    registrar_button = Button(frame2, text="Registrar usuario",font=("Bebas Neue",10), command=registrar_usuario)
     registrar_button.grid(row=5, column=1, padx=10, pady=10)
     
     def killwin2():
         w2.destroy()
         win1.deiconify()
-    btnClose = Button(frame2,text="Regresar",command=killwin2)
+    btnClose = Button(frame2,text="Regresar",font=("Bebas Neue",10),command=killwin2)
     btnClose.grid(row=6, column=1, padx=10, pady=10)
 
 
