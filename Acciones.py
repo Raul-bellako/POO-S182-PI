@@ -65,3 +65,5 @@ class Acciones:
                 messagebox.showerror("Error", "No tienes suficiente saldo")
         else:
             messagebox.showerror("Error", "No se encontró la cuenta")
+            
+    

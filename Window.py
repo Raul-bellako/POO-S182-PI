@@ -1,10 +1,12 @@
 from tkinter import Tk, Frame, Label, Button, Entry, Toplevel, DISABLED
+from PIL import ImageTk, Image
 from Acciones import *
 
 #Ventana
 win1 = Tk()
 win1.title("Control de gastos virtual")
 win1.geometry("720x640")
+
 # Acciones
 acciones = Acciones()
 # Interfaz
